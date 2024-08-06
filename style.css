@@ -1,0 +1,2802 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.flex-container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/*------------------------------------HEADER-----------------------------------*/
+.header{
+    /*background-color: pink;*/
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    /* color: white; */
+   
+}
+.logo{
+    /*background-color: yellow;*/
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.logo img{
+    height: 50px;
+    width: auto;
+    filter: saturate(150%);
+}
+.logo img:hover{
+    filter: brightness(120%);
+    transition: 0.2s;
+}
+.navbar{
+    /*background-color: magenta;*/
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar a{
+    padding: 10px;
+    cursor: pointer;
+    /* font-family: helvetica; */
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar img{
+    height: 30px;
+    width: auto;
+    margin-bottom: -4px;
+    filter: invert(55%) sepia(99%) saturate(572%) hue-rotate(158deg) brightness(96%) contrast(92%);
+}
+.navbar img:hover{
+    filter: invert(16%) sepia(95%) saturate(1679%) hue-rotate(220deg) brightness(91%) contrast(98%);
+    transition: 0.3s;
+}
+.navbar .navigation:hover{
+    background-color: #20bbed;
+    color: white;
+    transition: 0.3s;
+}
+
+/*------------------------------------HOME.PHP/BODY-----------------------------------*/
+
+.body{
+    /*background-color: green;*/
+    flex: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        background-image: url(./img/lmvapic1.jpg);
+    }
+    20%{
+        background-image: url(./img/lmvapic2.jpg);
+    }
+    40%{
+        background-image: url(./img/lmvapic3.jpg);
+    }
+    60%{
+        background-image: url(./img/lmvapic1.jpg);
+    }
+    80%{
+        background-image: url(./img/lmvapic2.jpg);
+    }
+    100%{
+        background-image: url(./img/lmvapic3.jpg);
+    }
+}
+
+.title{
+    /*background-color: yellow;*/
+    height: 200px;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+.welcome{
+    /*background-color: pink;*/
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    text-align: center;
+    color: white;
+}
+.welcome h1{
+    text-shadow: 0 0 2px black;
+}
+.welcome h1:hover{
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.booknow{
+    /*background-color: red;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booknow a{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #00000099;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.booknow a:hover{
+    color: black;
+    background-color: #ffffff99;
+    transition: 0.3s;
+}
+
+/*-----------------------------HOME.PHP/BODY/REGISTER.PHP----------------------------*/
+.register{
+    height: 600px;
+    border-radius: 10px;
+    width: 650px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    box-shadow: 4px 6px 8px black;
+    background-color: white;
+}
+.rBgImg{
+    /*background-color: lightgreen;*/
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/registerBg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+}
+.rBgImg1{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.rBgImg1 img{
+    height: 50px;
+    width: auto;
+    filter: saturate(150%) contrast(120%) brightness(110%);
+}
+.rBgImg2{
+    /* background-color: orange; */
+    flex: 1;
+}
+.rBgImg2 p{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-size: 20px;
+}
+.rSignup{
+    /*background-color: teal;*/
+    flex: 4;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+.rSignHead{
+    /*background-color: teal;*/
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.rMessage{
+    /*background-color: teal;*/
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid;
+}
+.rMessage p{
+    font-size: 15px; 
+    text-align: center;
+}
+.rInstruction{
+    /*background-color:bisque;*/
+    flex: 2;
+}
+.rInstruction p{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.rSignBody{
+    /* background-color: pink; */
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+}
+.rinputs{
+    /*background-color: magenta;*/
+    flex: 2; 
+    display: flex;
+    flex-direction: column; 
+}
+.rinput1{
+    /*background-color: lightgreen;*/
+    flex: 2;
+    margin-left: 5px;
+}
+.rinput2{
+    /*background-color: lightgreen;*/
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rinput2 input{
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.rTerms{
+    /* background-color: orange; */
+    flex: 1;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+}
+.rTerms span{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+.rSignFooter{
+    /* background-color: lightblue; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rSignFooter input{
+    width: 40%;
+    height: 80%;
+    cursor: pointer;
+    background-color: #22b9ec;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+}
+.rSignFooter input:hover{
+    background-color: #24328f;
+    transition: 0.3s;
+}
+label{
+    font-size: 13px;
+}
+
+
+/*-----------------------------HOME.PHP//CONTACT.PHP----------------------------*/
+.contact{
+    /* background-color: orange; */
+    flex: 10;
+    
+    
+}
+
+.contact-scroll{
+    height: 82vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+.contact-pic{
+    height: 590px;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(img/lmvapic2.jpg); */
+    background-size: cover;
+    background-position: center;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        background-image: url(./img/lmvapic1.jpg);
+    }
+    20%{
+        background-image: url(./img/lmvapic2.jpg);
+    }
+    40%{
+        background-image: url(./img/lmvapic3.jpg);
+    }
+    60%{
+        background-image: url(./img/lmvapic1.jpg);
+    }
+    80%{
+        background-image: url(./img/lmvapic2.jpg);
+    }
+    100%{
+        background-image: url(./img/lmvapic3.jpg);
+    }
+    
+
+}
+
+.contact-pic h1{
+    color: #fff;
+    text-shadow: 0 0 2px black;
+    
+    
+}
+
+.contact-pic h1:hover{
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.contact-information{
+    /* background-color: pink; */
+    height: 530px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.contact1{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+}
+
+.contact-info{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title{
+    /* background-color: pink; */
+    flex: 2;
+}
+
+.contact-title h1{
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.contact-infos{
+    /* background-color: lightblue; */
+    /* border: 1px solid black; */
+    flex: 1;
+    font-family: "Pontano Sans", sans-serif;
+}
+
+.contact-infos p{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+.empty-contact{
+    /* background-color: coral; */
+    flex: 1;
+ 
+}
+
+.contact2{
+    /* background-color: gray; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Pontano Sans", sans-serif;
+}
+
+.contact-input1{
+    /* background-color: coral; */
+    /* border: 1px solid black; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.con-name{
+    /* background-color: yellow; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.con-name label{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.con-wname{
+    /* background-color: lightblue; */
+    flex: 2;
+    display: flex;
+}
+
+.con-wname input{
+    width: 90%;
+    height: 80%;
+}
+
+.con-fname{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-lname{
+    /* background-color: green; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-name-info{
+    /* background-color: lightblue; */
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con-name-info input, .con-lname input, .con-fname input{
+    text-indent: 5px;
+    font-size: 15px;
+}
+
+.con-name-info input, textarea{
+    width: 95%;
+    height: 80%;
+    text-indent: 5px;
+}
+
+/* .con-name-info textarea{
+    width: 95%;
+    height
+} */
+
+.contact-input2{
+    /* background-color: gray; */
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input3{
+    /* background-color: pink; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.contact-input3 input{
+    width: 15%;
+    height: 80%;
+    cursor: pointer;
+    background-color: #22b9ec;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+}
+
+.contact-input3 input:hover{
+    transition: 0.3s;
+    background-color: #22358c;
+}
+
+
+
+
+/*-----------------------------HOME.PHP//LOGIN.PHP----------------------------*/
+
+.logginIn{
+    background-color: white;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px black;
+}
+.lHeader{
+    /* background-color: pink; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.lHeader1{
+    /* background-color: pink; */
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+.lHeader2{
+    /* background-color: teal; */
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lHeader1 p{
+    font-size: 30px;
+    line-height: 0;
+    font-weight: bold;
+}
+.lHeader2 p{
+    line-height: 0;
+    margin-left: 20px;
+    text-align: center;
+}
+/* .lHeader3{ */
+    /* background-color: red; */
+    /* flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+} */
+.lHeader3 p{
+    line-height: 1;
+    text-align: center;
+}
+.lBody{
+    /* background-color: lightgreen; */
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+.lBody1{
+    /* background-color: lightgreen; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.lBody11{
+    /* background-color: green; */
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+.lBody11 label{
+    margin-left: 20px;
+    font-size: 1rem;
+}
+.lBody12 input{
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.lBody12{
+    /* background-color: green; */
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lBody2{
+    /* background-color: aqua; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.lBody3{
+    /* background-color: coral; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.lBody31{
+    /* background-color: orange; */
+    flex: 1;
+}
+.lBody32{
+    /* background-color: yellow; */
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lBody32 input{
+    width: 90%;
+    height: 80%;
+    cursor: pointer;
+    background-color: #22b9ec;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+.lBody32 input:hover{
+    background-color: #24328f;
+    transition: 0.3s;
+}
+.lFooter{
+    /* background-color: lightblue; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.lFooter a{
+    color: #03C988;
+}
+.lFooter a:hover{
+    color: green;
+}
+
+/*-----------------------------HOME.PHP/BODY/GUIDELINES.PHP----------------------------*/
+
+.protocols{
+    background-color: #00000099;
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px black;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background: #00000099;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.guide{
+    /* background-color: lightgreen; */
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+.policy{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+}
+.description{
+    /* background-color: lightblue; */
+    flex: 2;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+}
+.guides{
+    /* background-color: aqua; */
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+.guided{
+    height: 80px;
+}
+
+/*-----------------------------HOME.PHP/BODY/HOTEL.PHP----------------------------*/
+
+.hotel{
+    /* background-color: orange; */
+    width: 65%;
+    height: 82vh;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0 300px;
+}
+
+.room1{
+    height: 490px;
+    width: 930px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 5px black;
+}
+.hBox1{
+    /* background-color: pink; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.hCurImg{
+    /* background-color: pink; */
+    flex: 4;
+    border-top-left-radius: 10px;
+}
+.hCurImg img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+}
+.hCurImg img:hover{
+    filter: brightness(90%);
+    transition: 0.2s;
+}
+.hImgs{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.hImg2{
+    /* background-color: magenta; */
+    flex: 1;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+.hImg2 img{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+}
+.hImg2 img:hover{
+    filter: brightness(90%);
+    transition: 0.2s;
+}
+.hImg3{
+    /* background-color: teal; */
+    flex: 1;
+    cursor: pointer;
+}
+.hImg3 img{
+    width: 100%;
+    height: 100%;
+}
+.hImg3 img:hover{
+    filter: brightness(90%);
+    transition: 0.2s;
+}
+.hImg4{
+    /* background-color: orange; */
+    flex: 1;
+    cursor: pointer;
+}
+.hImg4 img{
+    width: 100%;
+    height: 100%;
+}
+.hImg4 img:hover{
+    filter: brightness(90%);
+    transition: 0.2s;
+}
+.hBox2{
+    background-color: aliceBlue;
+    flex: 2;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.hEmpty1{
+    /* background-color: aqua; */
+    flex: 1;
+    border-bottom-right-radius: 10px;
+    display: flex;
+}
+.hEmpty1 img{
+    height: 15px;
+    width: auto;
+    margin: 10px 10px;
+}
+.hEmpty1 p{
+    color: #e12d2d;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.hBody{
+    /* background-color: lightgreen; */
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+}
+.hType{
+    /* background-color: lightgreen; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.hType1 h2{
+    font-size: 30px;
+    color: #875e2c;
+    font-weight: bold;
+    font-family: 'Inria Serif', serif;
+   
+}
+.hType1{
+    /* background-color: lightgreen; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+.hType2{
+    /* background-color: red; */
+    flex: 1;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hType2 img{
+    height: 15px;
+    width: auto;
+    margin: 15px 0 15px 0;
+}
+.hType2 img:hover{
+    filter: brightness(130%);
+    transition: 0.2s;
+}
+.hDetails{
+    /* background-color: teal; */
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.hDetails p{
+    line-height: 0;
+    margin-left: 10px;
+}
+.hDetails .froom{
+    line-height: 1.1;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.hDetails p .amneties{
+    padding: 5px;
+    border: 1px solid;
+    background-color: white;
+    font-size: 13px;
+}
+.hDetails p .presyo{
+    line-height: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.hRoomDet{
+    /* background-color: coral; */
+    flex: 1;
+}
+.hRoomDet h3{
+    line-height: 0;
+    margin-left: 10px;
+}
+.hBook{
+    /* background-color: yellowgreen; */
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hBook a{
+    width: 60%;
+    height: 95%;
+    cursor: pointer;
+    background-color: #FFB100;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hBook a:hover{
+    background-color: #FF6E31;
+    transition: 0.3s;
+}
+
+/* .hBook a{
+    width: 60%;
+    height: 90%;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #FFB100;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+.hBook a:hover{
+    background-color: #FF6E31;
+    transition: 0.3s;
+} */
+.hDescription{
+    /* background-color: pink; */
+    flex: 4;
+}
+.hDescription p{
+    line-height: 1.1;
+    text-align: center;
+}
+
+/*-----------------------------PROFILE.PHP/BODY/ACCOUNT.PHP----------------------------*/
+.account{
+    height: 90%;
+    width: 50%;
+    background-color: #00000099;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.acc{
+    height: 90%;
+    width: 50%;
+    background-color:#1e232a99;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.accPic{
+    /* background-color: teal; */
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+.accPic img{
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+.accMail{
+    /* background-color: lightblue; */
+    flex: 3;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.mailName{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mailChange{
+    /* background-color: yellow; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0 0 5px 5px;
+}
+.mailChange p{
+    color: white;
+    cursor: pointer;
+    line-height: 0;
+    font-size: 13px;
+}
+.mailChange p:hover{
+    color: gray;
+    transition: 0.3s;
+}
+.aHeader{
+    /* background-color: pink; */
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.aBody{
+    /* background-color: lightgreen; */
+    flex: 5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.res{
+    width: 95%;
+    height: 90%;
+    background-color:#1e232a99;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.accSetup{
+    /* background-color: gray; */
+    flex: 1;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.accSetup1{
+    flex: 1;
+}
+.accSetup2{
+    flex: 1;    
+    display: flex;
+    justify-content: flex-end;
+}
+.accSetup2 input{
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.accSetup2 input:hover{
+    color: lightgray;
+    transition: 0
+
+}
+.accSetup1 h2{
+    margin-left: 10px;
+    line-height: 0;
+    color: white;
+}
+.accTable{
+    /* background-color: green; */
+    flex: 5;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.accRes{
+    margin-top: 10px;
+}
+.accRes, tr, td{
+    border: 1px solid;
+    padding: 10px;
+    border-collapse: collapse;
+    color: white;
+}
+
+/*-----------------------------PROFILE.PHP/BODY/SERVICES.PHP----------------------------*/
+.services{
+    background-color: #00000099;
+    border-radius: 10px;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.sHeader{
+    background-color: #1e232a;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    background: url(img/service-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sHeader h2{
+    color: white;
+    font-family: 'Inria Serif', serif;
+    text-shadow: 0 0 2px black;
+}
+.sBody{
+    /* background-color: pink; */
+    flex: 7;
+    display: flex;
+}
+
+.serviceTypes{
+    /* background-color: pink; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.serviceDes{
+    flex: 1;
+    /* background-color: coral; */
+    border: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.serviceRow{
+    background-color: #875e2c;
+    border: 1px solid #875e2c;
+}
+.serviceRow input{
+    margin-bottom: 4px;
+}
+.sFooter{
+    /* background-color: teal; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+.sFooter a{
+    width: 20%;
+    height: 60%;
+    cursor: pointer;
+    background-color: #FFB100;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 2px 10px 3px 0;
+}
+.sFooter a:hover{
+    background-color: #FF6E31;
+    transition: 0.3s;
+}
+
+
+.sFooter input{
+    width: 20%;
+    height: 60%;
+    cursor: pointer;
+    background-color: #FFB100;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.sFooter input:hover{
+    background-color: #FF6E31;
+    transition: 0.3s;
+}
+
+/*-----------------------------PROFILE.PHP/BODY/ACCOMODATIONFORM.PHP----------------------------*/
+.accomodation{
+    background-color: #00000099;
+    width: 45%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid gray; */
+}
+.formHeader{
+    /* background-color: pink; */
+    flex: 2;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/accomodation-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.formHeader h2{
+    font-family: 'Inria Serif', serif;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+.formBody{
+    /* background-color: lightgreen; */
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+.personalInfo{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+.pInfo p, .rInfo p{
+    line-height: 0;
+    margin-left: 16px;
+    color: white;
+}
+.pInfo{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #875e2c;
+}
+.pForm{
+    /* background-color: yellow; */
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+.reserveInfo{
+    /* background-color: lightgreen; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+.rInfo{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #875e2c;
+}
+.rForm{
+    /* background-color: yellow; */
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+}
+.prForm1{
+    /* background-color: aqua; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.prForm2{
+    /* background-color: coral; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    /* background-color: aqua; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.box2{
+    /* background-color: coral; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.boxLabel{
+    /* background-color: aqua; */
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.boxLabel label{
+    margin-left: 16px;
+    color: white;
+}
+.boxLabel label span{
+    color: red;
+}
+.boxLabel1{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxLabel2{
+    /* background-color: pink; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxLabel1 label, .boxLabel2 label{
+    margin-right: 16px;
+}
+.boxInput{
+    /* background-color: green; */
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.boxInput1{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxInput2{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxInput input{
+    width: 90%;
+    height: 60%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: white;
+}
+.boxInput .colorBlack{
+    color: black;
+}
+.boxInput1 select, .boxInput2 select{
+    width: 78%;
+    height: 35px;
+    border-radius: 5px;
+}
+.formFooter{
+    /* background-color: teal; */
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formFooter a{
+    width: 20%;
+    height: 59%;
+    cursor: pointer;
+    background-color: #FFB100;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 1px 10px 3px 0;
+}
+.formFooter a:hover{
+    background-color: #FF6E31;
+    transition: 0.3s;
+}
+
+.formFooter input{
+    width: 20%;
+    height: 60%;
+    cursor: pointer;
+    background-color: #FFB100;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.formFooter input:hover{
+    background-color: #FF6E31;
+    transition: 0.3s;
+}
+
+/*-----------------------------PROFILE.PHP/BODY/PAYMENT.PHP----------------------------*/
+.payment{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 45%;
+    height: 95%;
+    border: 1px solid;
+}
+.pHeading{
+    /* background-color: pink; */
+    flex: 1.5;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Inria Serif', serif;
+    background: url(img/accomodation-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.pHeading h2{
+    line-height: 0;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+.pBody{
+    /* background-color: lightgreen; */
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+}
+.pMethod{
+    /* background-color: aqua; */
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+.pInputs{
+    /* background-color: yellow; */
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    
+}
+.pColumn{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+.pLabel{
+    /* background-color: red; */
+    flex: 1;
+}
+.pLabel label{
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+}
+.pInput{
+    /* background-color: pink; */
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pInput input{
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.pBox1{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    border: 1px solid;
+}
+.pBox1 p{
+    line-height: 0;
+    margin-left: 20px;
+    color: black;
+}
+.pBox2{
+    /* background-color: orange; */
+    flex: 1;
+    display: flex;
+    border: 1px solid;
+}
+.pBox2 img{
+    height: 30px;
+    width: auto;
+    margin: 0 10px;
+    filter: saturate(130%) contrast(110%);
+    cursor: pointer;
+}
+.pBox2 img:hover{
+    filter: brightness(90%);
+    transition: 0.3s;
+}
+.pEmpty{
+    /* background-color: coral; */
+    flex: 0.3;
+}
+.pSummary{
+    /* background-color: teal; */
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    color: black
+}
+.pCenter{
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pStart{
+    display: flex;
+    color: black;
+    width: 99.7%;
+    align-items: center;
+    border: 1px solid;
+    background-color: #22b9ec;
+    /* border: 1px solid #875e2c; */
+}
+.pStart p{
+    line-height: 0;
+    margin-left: 15px;
+}
+.pStart p, .pBox1 p, .pBox2 p{
+    line-height: 0;
+}
+
+.pInput .pcardInput{
+    width: 95%;
+}
+.pFooter{
+    /* background-color: lightblue; */
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pFooter input{
+    width: 30%;
+    height: 60%;
+    cursor: pointer;
+    background-color: #2192FF;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.pFooter input:hover{
+    background-color: #0081C9;
+    transition: 0.3s;
+}
+
+
+
+
+/*------------------------------------FOOTER-----------------------------------*/
+.footer{
+    /*background-color: teal;*/
+    height: 85px;
+    display: flex;
+    flex-direction: row; 
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+}
+.discover{
+    /*background-color: red;*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    /*background-color: aqua;*/
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.link{
+    /*background-color: lightseagreen;*/
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link ul li{
+    cursor: pointer;
+    list-style: none;
+}
+.link ul li:hover{
+    color: gray;
+    transition: 0.3s;
+}
+.link ul{
+    padding: 0;
+}
+.book{
+    /*background-color: lightgreen;*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.message{
+    /*background-color: blue;*/
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message p{
+    text-align: center;
+    text-shadow: 0 0 1px black;
+}
+.stay{
+    /*background-color: orange;*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.location{
+    /*background-color: purple;*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------------ADMIN/ADMINLOGIN.PHP----------------------------*/
+.adminLog{
+    width: 30%;
+    height: 50%;
+    background-color: #1e232a;
+    border-radius: 10px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px black;
+}
+.adHeader{
+    /* background-color: black; */
+    flex: 1;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adHeader img{
+    height: 70px;
+    width: auto;
+    filter: saturate(150%);
+}
+.adBody{
+    /* background-color: pink; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.wel{
+    /* background-color: pink; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.welPanel{
+    /* background-color: red; */
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+.welPanel h3, .welDes p{
+    line-height: 0;
+}
+.welDes{
+    /* background-color: pink; */
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.welDes p{
+    color: gray;
+    font-size: 0.8em;
+}
+.user{
+    /* background-color: magenta; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.userLabel{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+.userInput{
+    /* background-color: yellow; */
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pass{
+    /* background-color: teal; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.passLabel{
+    /* background-color: magenta; */
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+.passInput{
+    /* background-color: yellow; */
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userInput input, .passInput input{
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-indent: 10px;
+}
+.userLabel label, .passLabel label{
+    margin-left: 20px;
+    font-size: 14px;
+    color: white;
+}
+.adFooter{
+    /* background-color: lightblue; */
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adFooter input{
+    width: 90%;
+    height: 60%;
+    cursor: pointer;
+    background-color: #20bbeb;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.adFooter input:hover{
+    background-color: #22348d;
+    transition: 0.3s;
+}
+
+
+
+
+/*-----------------------------USER/PROFILEINQUIRY.PHP----------------------------*/
+
+.profileinquiry{
+    background-color: #fff;
+    width: 50%;
+    height:90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 6px 8px black;
+}
+
+.inquire-head{
+    /* background-color: pink; */
+    flex: 2;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.inquire-title{
+    /* background-color: green; */
+    flex: 1;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.inquire-title p{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.inquire-subject{
+    /* background-color: pink; */
+    flex: 1;
+    display: flex;
+
+}
+
+.inquire-subject-1{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.inquire-subject-2{
+    /* background-color: coral; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* border-left: 1px solid; */
+}
+.inquire-subject-2 .sub-info input{
+    width: 98%;
+}
+
+.sub-label{
+    flex: 1;
+    /* background-color: gray; */
+    padding: 0 12px;
+}
+
+.sub-info{
+    flex: 1.5;
+    /* background-color: lightgreen; */
+    padding: 0 10px;
+}
+
+.inquire-subject input{
+    width: 100%;
+    height: 90%;
+    /* border: none; */
+    text-indent: 5px;
+}
+
+.inquire-body{
+    /* background-color: cyan; */
+    flex: 6;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.inquire-body textarea{
+    width: 100%;
+    height: 90%;
+    text-indent: 5px;
+    font-size: 15px;
+}
+
+.inquire-footer{
+    /* background-color: coral; */
+    flex: 1;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+.inquire-footer input{
+    width: 20%;
+    height: 70%;
+    background-color: #22b9ec;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inquire-footer input:hover{
+    transition: 0.3s;
+    background-color:#23358b;
+}
+
+
+
+
+
+
+/*-----------------------------ADMIN/ADMINHOME.PHP----------------------------*/
+
+.adminHome{
+    /* background-color: pink; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.adminNav{
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.adminLogo{
+    /* background-color: yellow; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.adminLogo img{
+    height: 50px;
+    width: auto;
+    filter: saturate(150%);
+    margin-left: 20px;
+    cursor: pointer;
+}
+.adminLogo img:hover{
+    filter: brightness(120%);
+    transition: 0.2s;
+}
+.adminLinks{
+    /* background-color: magenta; */
+    flex: 1.5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.adminLinks img{
+    filter: invert(98%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(103%) contrast(103%);
+    height: 30px;
+    width: auto;
+    margin-bottom: -5px;
+}
+.adminLinks img:hover{
+    filter: invert(15%) sepia(93%) saturate(6966%) hue-rotate(359deg) brightness(92%) contrast(119%);
+}   
+.adminLinks a{
+    padding: 10px;
+    cursor: pointer;
+    /* font-family: helvetica; */
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.adminLinks .navigation:hover{
+    background-color: #22b9ec;
+    color: white;
+    transition: 0.3s;
+}
+
+.administrator{
+    /* background-color: coral; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inria Serif', serif;
+
+}
+.administrator h2{
+    text-shadow: 0 0 3px black;
+    line-height: 0;
+    color: white;
+
+}
+.adminBody{
+    /* background-color: lightgreen; */
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adminTable{
+    background-color: #fff;
+    width: 70%;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 6px 8px black;
+}
+
+.adminTable form{
+    width: 100%;
+}
+
+
+.adminAcc{
+    border: 1px solid;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+.adminAcc tr td{
+    color: black;
+}
+.deleteIcon img{
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+    /* filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(338deg) brightness(101%) contrast(100%); */
+}
+.deleteIcon img:hover{
+    filter: invert(15%) sepia(77%) saturate(4678%) hue-rotate(10deg) brightness(99%) contrast(107%);
+    transition: 0.1s;
+}
+
+
+/*-----------------------------ADMIN/ADMINSEARCH.PHP----------------------------*/
+
+.adminsTable{
+    background-color: #fff;
+    width: 65%;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 4px 6px 8px black;
+}
+
+.search{
+    /* background-color: gray; */
+    flex: 1;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+.search input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 60%;
+    width: 20%;
+    margin: 0 5px;
+    text-indent: 10px;
+}
+.search .submitCus{
+    width: 10%;
+    height: 65%;
+    cursor: pointer;
+    background-color: #22b9ec;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    text-indent: 0;
+}
+.search .submitCus:hover{
+    background-color: #23358b;
+    transition: 0.3s;
+}
+.searchTable{
+    /* background-color: aqua; */
+    flex: 10;
+    width: 100%;
+    
+}
+
+.searchTable table{
+    width: 100%;
+}
+
+
+.searchCustomer,tr,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.searchCustomer tr td{
+    color: black;
+}
+
+/*-----------------------------ADMIN/ADMINUPDATE.PHP----------------------------*/
+.adminUpdate{
+    background-color: #1e232a99;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.adminRoom{
+    background-color: red;
+    flex: 1;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.adminService{
+    background-color: aqua;
+    flex: 1;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+
+}
+.adminRoom div table, .adminService div table{
+    margin-top: 50px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+
+/*-----------------------------ADMIN/ADMINUSER.PHP----------------------------*/
+
+.adminsUserAdd{
+    background-color: #fff;
+    width: 65%;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 6px 8px black;
+}
+
+.userHeader{
+    /* background-color: gray; */
+    flex: 1;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    padding: 0 10px;
+    border-bottom: 1px solid black;
+}
+
+.userAdding{
+    /* background-color: red; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: start;
+}
+
+.userAdding a{
+    border-radius: 5px;
+    width: 25%;
+    height: 100%;
+    background-color: #22b9ec;
+    color: #fff;
+    font-size: 15px;
+    /* font-weight: bold; */
+    border: none;
+    text-indent: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userAdding a:hover{
+    transition: 0.3s;
+    background-color: #23358b;
+}
+
+
+.userSearch{
+    /* background-color: lightblue; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content:end;
+}
+
+.userSearch input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 100%;
+    width: 30%;
+    margin: 0 5px;
+    text-indent: 10px;
+}
+
+.userSearch .submitCus{
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #22b9ec;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    text-indent: 0;
+}
+
+.userSearch .submitCus:hover{
+    transition: 0.3s;
+    background-color: #23358b;
+}
+
+.userBody{
+    /* background-color: pink; */
+    flex: 10;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+
+}
+
+.userBody table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    /* border: none; */
+}
+
+/* tr, td{
+    border: none;
+} */
+
+.userFooter{
+    /* background-color: lightgreen; */
+    flex: 1;
+    border-radius: 0 0 10px 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.adminAcc tr td a{
+    text-decoration: none;
+}
+
+.adminAcc tr td a:hover{
+    color: gold;
+    transition: 0.3s;
+}
+
+
+
+
+/*-----------------------------ADMIN/USERADDSTAFF.PHP----------------------------*/
+
+.staffBody{
+    /* background-color: pink; */
+    flex: 10;
+    display: flex;
+    flex-direction: column
+}
+
+.userHeader p{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.staffInput{
+    flex: 1;
+    /* border: 1px solid black; */
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+}
+
+.staffLabel{
+    /* background-color: cyan; */
+    flex: 2;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.staffInfo{
+    /* background-color: pink; */
+    flex: 3;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.staffInfo input{
+    border-radius: 3px;
+    text-indent: 5px;
+    height: 90%;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.userFooter .submitCus{
+    width: 20%;
+    height: 65%;
+    cursor: pointer;
+    background-color: #22b9ec;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px 0 0;
+}
+
+.userFooter .submitCus:hover{
+    transition: 0.3s;
+    background-color: #23358b;
+}
+
+.userFooter a{
+    width: 10%;
+    height: 65%;
+    cursor: pointer;
+    background-color: #424242;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.userFooter a:hover{
+    background-color: #272727;
+    transition: 0.3s;
+}
+
+
+
+/*-----------------------------ADMIN/ADMINADDDERM.PHP----------------------------*/
+
+
+.addDerm{
+    background-color: #fff;
+    width: 65%;
+    height: 30%;
+    border-radius: 10px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 6px 8px black;
+}
+
+.adminBodyDerm{
+    /* background-color: lightgreen; */
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.dermbody{
+    /* background-color: red; */
+    flex: 1.5;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dermlabel{
+    /* background-color: pink; */
+    flex: 1;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dermlabel p{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.derminput{
+    /* background-color: coral; */
+    flex: 1.5;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 10px;
+}
+
+.derminput select{
+    width: 100%;
+    height: 90%;
+
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.dermfooter{
+    /* background-color: cyan; */
+    flex: 1;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.dermfooter .submitCus{
+    width: 20%;
+    height: 50%;
+    cursor: pointer;
+    background-color: #22b9ec;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px 0 0;
+}
+
+.dermfooter .submitCus:hover{
+    transition: 0.3s;
+    background-color: #23358b;
+}
+
+.dermfooter a{
+    width: 10%;
+    height: 50%;
+    cursor: pointer;
+    background-color: #424242;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.dermfooter a:hover{
+    background-color: #272727;
+    transition: 0.3s;
+}
+
+
+
+/*-----------------------------STAFF/STAFFHOME.PHP----------------------------*/
+
+.stafftitle{
+    background-color: #fff;
+    flex: 1;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.staffNavbar{
+    /* background-color: cyan; */
+    flex: 1;
+    padding: 0 20px;
+    flex: 1;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.staffNavbar img{
+    /* filter: invert(98%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(103%) contrast(103%); */
+    filter: saturate(150%);
+    height: 50px;
+    width: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.staffNavbar img:hover{
+    filter: brightness(120%);
+}
+
+.staffNavbar a{
+    padding: 10px;
+    cursor: pointer;
+    /* font-family: helvetica; */
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 30px;
+}
+
+.staffNavbar a:hover{
+    background-color: #22b9ec;
+    color: white;
+    transition: 0.3s;
+}
+
+.staffLogout{
+    /* background-color: coral; */
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.staffLogout a{
+    padding: 10px;
+    cursor: pointer;
+    /* font-family: helvetica; */
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.staffLogout a:hover{
+    background-color: #22b9ec;
+    color: white;
+    transition: 0.3s;
+}
+
+.staffwholebody{
+    /* background-color: green; */
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+}
+
+.staffbody1{
+    background-color: #fff;
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.staffbody1 p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.staffbody2{
+    /* background-color: gray; */
+    flex: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/*-----------------------------STAFF/STAFFINQUIRY.PHP----------------------------*/
+.staffMiddle{
+    width: 60%;
+    height: 85%;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.staffh-head{
+    /* background-color: gray; */
+    flex: 1;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid black;
+}
+.staffh-body{
+    /* background-color: pink; */
+    flex: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.staffh-body table tr td{
+    color: black;
+    
+}
+
+.record-table{
+    border-collapse: collapse;
+}
+
+.staffh-footer{
+    /* background-color: cyan; */
+    flex: 1;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid black;
+}
+
+.inquire-head{
+    /* background-color: gray; */
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid;
+}
+
+.ih-title{
+    /* background-color: orange; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px 0 0 0;
+}
+
+.ih-title p{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.ih-print{
+    /* background-color: yellow; */
+    flex: 1;
+    display: flex;
+    padding: 0 10px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 0 5px 0 0;
+}
+
+.ih-print a{
+    text-decoration: none;
+}
+
+
+.inquire-msg{
+    /* background-color: cyan; */
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-mail{
+    /* background-color: cyan; */
+    flex: 1;
+    display: flex;
+}
+
+.sub-profile, .subm-empty{
+    /* background-color: cyan; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-profile img{
+    height: 50px;
+    width: auto;
+}
+
+.sub-nav{
+    /* background-color: gray; */
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+}
+
+.subp-nav{
+    /* background-color: gray; */
+    flex: 1;
+    display: flex;
+    align-items: end;
+    padding: 0 5px;
+}
+
+.subp-nav span, .subp-head small{
+    color: gray;
+}
+
+.subp-head{
+    /* background-color: green; */
+    flex: 1.5;
+    display: flex;
+    padding: 0 5px;
+}
+
+.sub-msg{
+    /* background-color: pink; */
+    flex: 2;
+    display: flex;
+}
+
+.inquire-reply{
+    /* background-color: coral; */
+    flex: 3;
+    display: flex;
+    padding-left: 70px;
+}
+
+.inquire-reply input{
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+
+}
+
+.inquire-reply input:hover{
+    background-color: rgb(70, 70, 70);
+    transition: 0.3s;
+}
+
+.subm-msg{
+    /* background-color: pink; */
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
